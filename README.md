@@ -37,3 +37,27 @@ pdfSearch.open(process.argv[process.argv.length - 1]).then(function(pdf){
 	});
 });
 ```
+
+#### API
+
+##### Promise pdfSearch.open(fileName)
+
+pdfSearch.open will open PDF file and you can use that same object to read that PDF. 
+
+It will return Promise which will resolve when pdfSearch is ready to read pages. 
+
+##### Promise pdfSearch.readAllPages()
+
+pdfSearch.readAllPages will return Promise for Array of strings with text from pages. 
+
+##### Promise pdfSearch.readPage(pageNum)
+
+pdfSearch.readPage will return promise for string which is content of that page
+
+## Credits
+
+pdf.js by Mozilla
+
+## Author
+
+Nemanja Nedeljković
