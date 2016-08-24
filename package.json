@@ -1,0 +1,28 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "Search PDF, DOC and DOCX files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemanjan00/search.git"
+  },
+  "keywords": [
+    "doc",
+    "docx",
+    "pdf",
+    "search"
+  ],
+  "author": "Nemanja Nedeljković <nemanjan00@gmail.com> (https://nemanja.top/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nemanjan00/search/issues"
+  },
+  "homepage": "https://github.com/nemanjan00/search#readme",
+  "dependencies": {
+    "node-ensure": "0.0.0"
+  }
+}
