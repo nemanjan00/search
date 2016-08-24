@@ -1,3 +1,3 @@
 module.exports = {
-	pdfSearch: require('./pdf');
+	pdfSearch: require('./pdf')
 };
