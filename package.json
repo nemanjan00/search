@@ -1,5 +1,5 @@
 {
-  "name": "search",
+  "name": "unisearch",
   "version": "1.0.0",
   "description": "Search PDF, DOC and DOCX files",
   "main": "index.js",
