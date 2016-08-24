@@ -1,0 +1,112 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.10.6
+3 info using node@v6.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/nemanjan00/search',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/nemanjan00/.npm/unisearch/1.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/nemanjan00/.npm correctMkdir not in flight; initializing
+10 info lifecycle unisearch@1.0.1~prepublish: unisearch@1.0.1
+11 silly lifecycle unisearch@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/nemanjan00/.npm/unisearch/1.0.1/package.tgz',
+12 verbose tar pack   '/home/nemanjan00/search' ]
+13 verbose tarball /home/nemanjan00/.npm/unisearch/1.0.1/package.tgz
+14 verbose folder /home/nemanjan00/search
+15 verbose addLocalTarball adding from inside cache /home/nemanjan00/.npm/unisearch/1.0.1/package.tgz
+16 verbose correctMkdir /home/nemanjan00/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd unisearch@1.0.1
+18 verbose afterAdd /home/nemanjan00/.npm/unisearch/1.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /home/nemanjan00/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/nemanjan00/.npm/unisearch/1.0.1/package/package.json written
+21 silly publish { name: 'unisearch',
+21 silly publish   version: '1.0.1',
+21 silly publish   description: 'Search PDF, DOC and DOCX files',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   bin: { pdfCat: 'bin/pdfCat.js' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/nemanjan00/search.git' },
+21 silly publish   keywords: [ 'doc', 'docx', 'pdf', 'search' ],
+21 silly publish   author:
+21 silly publish    { name: 'Nemanja Nedeljković',
+21 silly publish      email: 'nemanjan00@gmail.com',
+21 silly publish      url: 'https://nemanja.top/' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/nemanjan00/search/issues' },
+21 silly publish   homepage: 'https://github.com/nemanjan00/search#readme',
+21 silly publish   dependencies: { 'node-ensure': '0.0.0' },
+21 silly publish   readme: '# search\n\nSearch PDF, DOC and DOCX files\n\n## Install\n\n```bash\nsudo npm install -g unisearch\n```\n\n## Bins\n\nSearch comes with some bins.\n\n### pdfCat\n\npdfCat converts pdf to txt and sends it to output. \n\n```bash\npdfCat pdf.pdf\n```\n\n## Libs\n\n### pdfSearch\n\nYou can use pdfSearch to read PDF files page by page or whole document.\n\n#### Example\n\n```javascript\nvar pdfSearch = require(\'unisearch\').pdfSearch;\n\npdfSearch.open(process.argv[process.argv.length - 1]).then(function(pdf){\n\tpdfSearch.readAllPages().then(function(pages){\n\t\tconsole.log(pages.join(\'\\n\'));\n\t});\n});\n```\n\n#### API\n\n##### Promise pdfSearch.open(fileName)\n\npdfSearch.open will open PDF file and you can use that same object to read that PDF. \n\nIt will return Promise which will resolve when pdfSearch is ready to read pages. \n\n##### Promise pdfSearch.readAllPages()\n\npdfSearch.readAllPages will return Promise for Array of strings with text from pages. \n\n##### Promise pdfSearch.readPage(pageNum)\n\npdfSearch.readPage will return promise for string which is content of that page\n\n## Credits\n\npdf.js by Mozilla\n\n## Author\n\nNemanja Nedeljković\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '219b7abfa8a4e384ec7140a2e08b1c10a9350020',
+21 silly publish   _id: 'unisearch@1.0.1',
+21 silly publish   _shasum: 'ee0b69d6dfb69bb7846661daaa86269197921c0c',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name unisearch
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'unisearch',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'unisearch',
+26 silly mapToRegistry   name: 'unisearch',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/unisearch
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/nemanjan00/.npm/unisearch/1.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/unisearch
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 1:34:57 PM
+33 verbose request using bearer token for auth
+34 verbose request id 8e054e86ff14dbf5
+35 http request PUT https://registry.npmjs.org/unisearch
+36 http 403 https://registry.npmjs.org/unisearch
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 24 Aug 2016 11:35:02 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lcy1120-LCY',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1472038498.108254,VS0,VE4833',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /home/nemanjan00/.npm/registry.npmjs.org/unisearch on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : unisearch
+40 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid unisearch
+43 verbose cwd /home/nemanjan00/search
+44 error Linux 4.7.0-1-ARCH
+45 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+46 error node v6.4.0
+47 error npm  v3.10.6
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.1." : unisearch
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
