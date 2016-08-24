@@ -10,7 +10,7 @@ sudo npm install -g unisearch
 
 ## Bins
 
-```search``` comes with some bins.
+Search comes with some bins.
 
 ### pdfCat
 
